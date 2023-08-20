@@ -1,0 +1,15 @@
+.header {
+    min-height: 100vh;
+    background: var(--header-bg);
+}
+
+.logo {
+    font-size: 1rem;
+}
+
+.logo__circle::before,
+.logo__circle::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+}
