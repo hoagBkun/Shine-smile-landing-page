@@ -37,7 +37,7 @@ a {
 .logo__circle::before {
     width: 3em;
     height: 3em;
-    background: #2e80ce;
+    background: var(--primary-color);
 }
 
 .logo__circle::after {
@@ -97,5 +97,51 @@ a {
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
+}
+
+.section-heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.section-desc {
+    width: 468px;
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66;
+}
+
+.chevron__control {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 18px;
+}
+
+.chevron__icon {
+    color: #575f66;
+    border: 1px solid currentColor;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.chevron__icon:last-child {
+    transform: rotate(180deg);
+}
+
+.chevron__icon:hover {
+    color: #fff;
+    background: var(--primary-color);
     cursor: pointer;
 }
