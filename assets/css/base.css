@@ -9,15 +9,22 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
+}
+
+input,
+button {
+    font-family: Open Sans;
 }
 
 /* Logo */
@@ -25,6 +32,7 @@ a {
     display: flex;
     position: relative;
     font-size: 1rem;
+    font-family: "Sora", sans-serif;
 }
 
 .logo__circle::before,
@@ -109,7 +117,7 @@ a {
 }
 
 .section-desc {
-    width: 468px;
+    max-width: 468px;
     margin-top: 18px;
     color: #575f66;
     font-size: 1.8rem;
@@ -145,3 +153,4 @@ a {
     background: var(--primary-color);
     cursor: pointer;
 }
+
